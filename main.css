@@ -1,0 +1,86 @@
+/*GENERAL STYLING*/
+html {
+	background-color: white;
+}
+
+/*HEADER STYLING*/
+	
+	/*TITLE STYLING*/
+	#title{
+		text-align: left;
+	}
+	
+	h1 {
+		font: 3em 'Montserrat', sans-serif;
+		margin: 3% 3% 0;
+		padding: 3% 0 0 0;
+	}
+	
+	h2{
+		font: 0.85em 'Montserrat', sans-serif;
+		margin: 0 3%;
+		padding: 0;
+	}
+			
+	/*CONTACT STYLING*/
+	#contact ul{
+		list-style-type: none;
+		text-align: right;
+		padding: 0;
+		margin: 0 0 2.5%;
+	}
+	
+	#contact li{
+		display: inline;
+		margin: 0 0 0 2.5%;
+	}
+	
+	#contact ul li a{
+		text-decoration: none;
+	}
+	
+		
+/*NAV STYLING*/
+	nav {
+		text-decoration: none;
+		text-align: center;
+		font: 0.85em 'Montserrat', sans-serif;
+		padding: .2em 1em;
+		margin: 0;
+		box-shadow: 1px 1.5px .5px .5px #663300;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav ul li {
+		display: inline;
+	}
+	
+	nav ul a {
+		text-decoration: none;
+		text-align: center;
+		font: 0.85em 'Montserrat', sans-serif;
+		padding: .2em 1em;
+		margin: 0;
+		box-shadow: 1px 1.5px .5px .5px #663300;
+	}
+	nav ul a:hover {
+		color: #4A96AD;
+	}
+
+/*MAIN BODY INDEX.HTML STYLING*/
+	/*SLIDESHOW SYLING*/
+	
+	/*DESCRIPTION STYLING*/
+	#description h3{
+		text-align: justify;
+	}
+	
+/*INQUIRY FORM CONTACT.HTML STYLING*/
+
+/*FOOTER STYLING*/
