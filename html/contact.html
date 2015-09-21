@@ -65,8 +65,23 @@
 		<!--end header-->
 
 		<!--main section of body: inquiry form-->
-		<div id="mainBody" class="jumbotron">
-	    	<h4>Inquiry form goes here.</h4<
+		<div id="inquiryForm" class="jumbotron">
+			<form action="inquiry.php" method="post">
+				<fieldset>
+					<legend>Inquiry Form</legend>
+					<p>Ask us about vacancies</p>
+					<input type="hidden" name="redirect" value="thankyou.html">
+					<ul>
+						<li><label for="firstlast">Name:</label><input type="text" name="inquirerName" id="firstlast"></li>
+						<li><label for="email">Email:</label><input type="text" name="inquirerEmail" id="email"></li>
+						<li><label for="move_in_date">When were you thinking about moving in?</label><input type="text" name="inquirerMoveInDate" id="move_in_date"></li>
+						<li><label for="heard_about_us">How did you hear about us?</label><input type="text" name="heardAboutUs" id="heard_about_us"></li>
+						<textarea name="inquiry" rows="4" cols="40" placeholder="Leave us your question here."></textarea>
+					</ul>
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Reset">
+				</fieldset>	
+			</form>
 		</div>
 		
 		

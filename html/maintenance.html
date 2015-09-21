@@ -66,7 +66,21 @@
 
 		<!--main section of body: maintenance instructions and form-->
 		<div id="mainBody" class="jumbotron">
-	    	<h4>Maintenance instructions, what to do if there is an emergency, work order form go here.</h4>
+	    	<h4>Please tell us the problem along with your name, location, and how to get in touch with you. If you prefer or if the problem is urgent, please contact us at 270-757-9479 or stop by the office.  <em>If you or someone else is in danger, call 911 immediately.</em></h4>
+	    	<form action="inquiry.php" method="post">
+				<fieldset>
+					<legend>Maintenance Request Form</legend>
+					<input type="hidden" name="redirect" value="thankyou.html">
+					<ul>
+						<li><label for="firstlast">Name:</label><input type="text" name="inquirerName" id="firstlast"></li>
+						<li><label for="location">Location:</label><input type="text" name="inquirerLocation" id="location"></li>
+						<li><label for="contact">Contact number:</label><input type="text" name="inquirerContact" id="contact"></li>
+						<textarea name="request" rows="4" cols="40" placeholder="Please describe the nature of the problem here."></textarea>
+					</ul>
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Reset">
+				</fieldset>	
+			</form>
 		</div>
 		
 		

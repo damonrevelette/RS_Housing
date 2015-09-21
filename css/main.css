@@ -5,7 +5,9 @@ html {
 body {
 	margin: 2.5em 2.5em 2.5em 2.5em; 
 	background-color: white;
+	
 }
+
 
 #linksAbove ul {
 	text-decoration: none;
@@ -23,5 +25,39 @@ body {
 nav{
 	text-align: center;
 }
+
+nav ul li a {
+	
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#map{
+	text-align: center;
+}
+
+form{
+	text-align: center;
+}
+
+form ul{
+	list-style-type: none;
+}
+
 
 
