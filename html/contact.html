@@ -6,27 +6,20 @@
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
   </head>
-
-  
 <body>
-	<!-begin header->
+	
 		<header>
 			<!--div with logo, contact info, and application link-->
-			<div id="linksAbove">
-				<div id=-"logo">
-					<h5>*insert logo here*</h5>
-					<h5>440 Phillip Stone Way #63</h5>
-					<h5>Central City, KY 42330</h5>
-				</div>
-				<div id="contact">
-					<ul >
-						    <li><a href="tel:2707579479"><h4>(270) 757 9479</h4></a></li>
-							<li><a href="mailto:rshousingky@gmail.com"><h4>Email Us</h4></a></li>
-							<li><a href="application.html"><h4>Apply Here!</a></h4></li> 
-					</ul>
-				</div>
+			<div>
+				<img src="../img/logo_270_117.jpg" alt="..."class="logo">
 			</div>
-						
+			<div id="contact">
+				<ul >
+					    <li><a href="tel:2707579479"><h4>(270) 757 9479</h4></a></li>
+						<li><a href="mailto:rshousingky@gmail.com"><h4>Email Us</h4></a></li>
+						<li><a href="application.html"><h4>Apply Here!</a></h4></li> 
+				</ul>
+			</div>
 			<!--navigation menu: links to other pages-->
 				<div id="menu">
 				   	<ul>
@@ -41,40 +34,33 @@
 		
 		</header>
 		<!--end header-->
-
-
-
-
-
-
 		<!--main section of body: inquiry form-->
 		<div id="inquiryForm" class="jumbotron">
-			<form action="inquiry.php" method="post">
+			<form name="inquiryForm" action="formsubmit.html" method="post" onsubmit="return validateInquiry()">
 				<fieldset>
 					<legend>Inquiry Form</legend>
-					<p>Ask us about vacancies</p>
+					<p>Ask us about vacancies!</p>
 					<input type="hidden" name="redirect" value="thankyou.html">
 					<ul>
 						<li><label for="firstlast">Name:</label><input type="text" name="inquirerName" id="firstlast"></li>
 						<li><label for="email">Email:</label><input type="text" name="inquirerEmail" id="email"></li>
-						<li><label for="move_in_date">When were you thinking about moving in?</label><input type="text" name="inquirerMoveInDate" id="move_in_date"></li>
+						<li><label for="phone">Phone Number:</label><input type="text" name="inquirerPhone" id="phone"></li>
+						<li><label for="move_in_date">Desired move-in date:</label><input type="text" name="inquirerMoveInDate" id="move_in_date"></li>
 						<li><label for="heard_about_us">How did you hear about us?</label><input type="text" name="heardAboutUs" id="heard_about_us"></li>
-						<textarea name="inquiry" rows="4" cols="40" placeholder="Leave us your question here."></textarea>
+						<textarea name="inquiry" id="inquiry" rows="4" cols="40" placeholder="Leave us your question here."></textarea>
 					</ul>
 					<input type="submit" name="submit" value="Submit">
 					<input type="reset" name="reset" value="Reset">
 				</fieldset>	
 			</form>
 		</div>
-		
-		
-		<footer></footer>
-
-
-
+		<footer>
+          	<p>&copy; 2015 Damon Revelette</p>
+        </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"charset="utf-8"></script>
 <script type="text/javascript" src="../js/mobile_navbar.js"charset="utf-8"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"charset="utf-8"></script>
+<script type="text/javascript" src="../js/validateForms.js"charset="utf-8"></script>
 </body>
 
 </html>

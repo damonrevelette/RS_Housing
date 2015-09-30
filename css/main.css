@@ -11,10 +11,23 @@ body {
 	background-color: white;
 }
 
-.jumbotron{
-background: #b1c7cc;
+#mainBody{
+	margin-bottom: 0px;
 }
 
+footer {
+	background-color: #b1c7cc;
+	text-align: center;
+}
+
+.jumbotron{
+	background: #b1c7cc;
+	margin-bottom: 0px;
+}
+
+#thankyou {
+	text-align: center;
+}
 
 /*Styling for upper portion of header*/
 #contact ul {
@@ -56,15 +69,18 @@ background: #b1c7cc;
 	background: #b1c7cc;
 }
 
+h3, h4{
+	text-align: center;
+}
+
+/******************************************************/
 /*Moves the drop-down option menu above the blue space*/
+/******************************************************/
 select {
 	width: 95%;
 	margin-top: -1.3em;
 	float: center;
 }
-
-
-
 
 #description{
 	background-color: #b1c7cc;
@@ -76,7 +92,7 @@ select {
 /*********************************************/
 
 /*get rid of white space between jumbotron and carousel*/
-#description.jumbotron{
+#description.jumbotron {
 	margin-bottom: 0px;
 	padding-bottom: none;
 }
@@ -121,19 +137,55 @@ select {
 /*********************************************/
 /*****************Forms***********************/
 /*********************************************/
+
 form{
 	text-align: center;
 }
 
 form ul{
 	list-style-type: none;
+	
+}
+s
+form ul li {
+	text-align: center;
+	max-width: 100%;
+}
+
+label { 
+	display: inline-block; 
+	width: 20%; 
+	text-align: left;
+}​
+
+form textarea {
+	max-width: 100%;
+}
+
+input {
+	max-width: 100%;
+}
+
+textarea{
+	display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		max-width: 100%;
 }
 
 /*********************************************/
 /**************Responsiveness*****************/
 /*********************************************/
 
-/*Big menu dissappears on smaller screens*/
+/*Address disappears on smaller screens*/
+
+@media (max-width: 1195px) {
+  #address {
+    display:none;
+  }
+}
+
+/*Big menu disappears on smaller screens*/
 @media (max-width: 1195px) {
   #menu ul {
     display:none;
@@ -161,4 +213,14 @@ form ul{
 		margin: 0px;
 		padding: 0px;
 	}
+	img.logo {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		max-width: 100%;
+  }	
+
+  label {
+  		margin-left: 0px;
+  }
 }
